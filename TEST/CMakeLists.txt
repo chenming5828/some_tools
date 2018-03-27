@@ -57,3 +57,6 @@ target_link_libraries( warp ${OpenCV_LIBS})
 
 add_executable( readmp4 readmp4.cpp )
 target_link_libraries( readmp4 ${OpenCV_LIBS})
+
+add_executable( record record.cpp )
+target_link_libraries( record ${OpenCV_LIBS})

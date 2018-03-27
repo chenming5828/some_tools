@@ -1,0 +1,5 @@
+who:			jenkins@caizhenbin-brisky
+git_user:		 qi.zhang@brisky.cc 
+git_version:	fc7895035842d9e0a35fc94415baa06fe8345f7e
+build_time:		2017年 08月 18日 星期五 11:56:35 CST
+

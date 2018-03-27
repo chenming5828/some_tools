@@ -1,0 +1,35 @@
+#!/bin/bash
+MID_ERR_PKG=/var/log/syslog.1.gz
+CUR_LOG_FILE=/var/log/syslog
+CUR_LOG_FILE_BAK=/var/log/syslog.1
+
+/usr/sbin/logrotate /etc/logrotate.d/rsyslog
+ret=$?
+
+echo "ret = $ret"
+if [ $ret -eq 1 ];then
+echo "logrotate error"
+if [ -f $MID_ERR_PKG ];then
+echo "syslog.1.gz exist, rm it"
+rm -rf $MID_ERR_PKG
+fi
+syslogsize=`stat -c "%s" $CUR_LOG_FILE`
+if [ $syslogsize -gt 1000000000 ];then
+echo "syslog size is very large $syslogsize"
+rm -rf $CUR_LOG_FILE
+touch $CUR_LOG_FILE
+chmod 777 $CUR_LOG_FILE
+fi
+syslogsize=`stat -c "%s" $CUR_LOG_FILE_BAK`
+if [ $syslogsize -gt 1000000000 ];then
+echo "syslog.1 size is very large $syslogsize"
+rm -rf $CUR_LOG_FILE_BAK
+touch $CUR_LOG_FILE_BAK
+chmod 777 $CUR_LOG_FILE_BAK
+fi
+elif [ $ret -eq 129 ];then
+echo "logrotate success"
+elif [ $ret -eq 0 ];then
+echo "syslog less than 10M do nothing"
+fi
+

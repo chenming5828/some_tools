@@ -1,0 +1,17 @@
+
+control engine测试方法说明：
+
+用法：
+
+1) Board启动成功后，
+   执行下列命令，确认camera-service和control_engine应用程序是否启动，
+   ps -e | grep camera-service
+   ps -e | grep control_engine 
+
+   如果可以找到对应进程，则进行后续测试，
+   如果未找到，则执行./run_all.sh命令后，再进行上述内容的确认。
+
+2) 应用程序启动成功时，再执行cat /etc/hostapd.conf, 获取当前Board的wifi帐号和密码。
+3) 使用安装了GCS程序的手机接入wifi中，并启动GCS程序。进行无人连接和拍摄内容显示。
+   如果可以正常看到Camera拍摄内容，证明control engine模块OK.
+

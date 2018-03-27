@@ -1,0 +1,22 @@
+
+Camera测试f方法说明：
+
+用法：
+
+1) 枚举设备的各种属性：（主摄像头）
+# camera-sample -d hires -e
+2) 枚举设备的各种属性：（OV7251光流摄像头）
+# camera-sample -d optic -e
+3) 枚举设备的各种属性：（USB光流摄像头，/dev/videoX要看具体情况）
+# camera-sample -d /dev/videoX -e
+
+4) 录像（主摄像头，1080p@30fps H264编码）
+# camera-sample -s 1920x1080 -o ./hires.h264
+5) 录像（OV7251光流摄像头，VGA@50fps H264编码）
+# camera-sample -d optic -s 640x480 -o ./optic.h264
+
+注意，
+1) 被测的摄像头必须存在
+2) 录像结束方法：Ctrl+C 
+
+

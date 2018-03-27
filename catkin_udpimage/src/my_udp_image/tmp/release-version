@@ -1,0 +1,49 @@
+/*---------------------------------------------------------*/
+---> camera service mainprogram
+		Date		:	20170308
+		Author		:	yanchuanhui
+		Version		:	V0065
+		Commit-ID	:   	223ab5e317fe97737791bc1f7baf032fe2d794db
+		Summary		:	modify SF for surfer-03
+
+---> camera-test
+		Date		:	20161012
+		Author		:	jiangjing
+		Version		:	V0003
+		Commit-ID	:       dda683c76e47656fe1d00a8d7363d8bac5127214
+		Summary		:	Add timer when 01 camera command have not feedback
+
+---> http-test
+		Date		:	20160322
+		Author		:
+		Version		:	V0002
+		Commit-ID	:
+		Summary		:	update the http-server for newest
+
+---> ap-test
+		Date		:	20150922
+		Author		:
+		Version		:	V0000
+		Commit-ID	:
+		Summary		:	Test GPIO/I2C/UART of AP
+
+---> adsp-test
+		Date		:	20150922
+		Author		:
+		Version		:	V0000
+		Commit-ID	:
+		Summary		:	Test GPIO/I2C/UART of ADSP
+
+--> control-engine
+		Date		:	20160621
+		Author		:	xiaohl0715
+		Version		:	V0016
+		Commit-ID	:	8b304abebc66e877fdf27dd996112ddac36e5e33
+		Summary		:   remove the upgrade_package.tar after upgrade 
+
+--> afc_dream
+        Date        :   20170622
+        Author      :   wanggq0714
+        Version     :   V0077
+        Commit-ID   :   I911ee057b578fa045d78697771dfcf27691371dd
+        Summary     :   modify log for only 1

@@ -1,0 +1,2 @@
+camera_service_version=V0071
+modify_time=2017/04/27

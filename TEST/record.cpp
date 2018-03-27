@@ -16,6 +16,9 @@ int main()
          return 0;
      }
 
+     capture.set(CV_CAP_PROP_FRAME_WIDTH, 320);  
+     capture.set(CV_CAP_PROP_FRAME_HEIGHT, 240); 
+
     //  float gain = 0.2f;
     //  // float ev = 0.0002;
     //  capture.set(CV_CAP_PROP_FPS,30);
@@ -35,7 +38,7 @@ int main()
          cnt ++;
          std::ostringstream ostr;
 
-         ostr << std::setfill('0') << std::setw(7) << cnt << ".jpg";
+         ostr <<"pic-"<< std::setfill('0') << std::setw(7) << cnt << ".jpg";
          std::string name = ostr.str();
       
 

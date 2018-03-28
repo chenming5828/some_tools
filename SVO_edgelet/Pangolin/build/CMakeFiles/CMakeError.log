@@ -1,0 +1,44 @@
+Performing C++ SOURCE FILE Test HAVE_FFMPEG_MAX_ANALYZE_DURATION2 failed with the following output:
+Change Dir: /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3730319927/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3730319927.dir/build.make CMakeFiles/cmTryCompileExec3730319927.dir/build
+make[1]: Entering directory `/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3730319927.dir/src.cxx.o
+/usr/bin/c++    -std=c++0x -Wall -Wextra  -DHAVE_FFMPEG_MAX_ANALYZE_DURATION2   -o CMakeFiles/cmTryCompileExec3730319927.dir/src.cxx.o -c /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx
+/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx:3:16: error: ‘max_analyze_duration2’ is not a member of ‘AVFormatContext’
+         sizeof(AVFormatContext::max_analyze_duration2);
+                ^
+make[1]: Leaving directory `/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3730319927.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec3730319927/fast] Error 2
+
+Source file was:
+#include "/usr/include/libavformat/avformat.h"
+      int main() {
+        sizeof(AVFormatContext::max_analyze_duration2);
+      }
+Performing C++ SOURCE FILE Test HAVE_FFMPEG_AVFORMAT_ALLOC_OUTPUT_CONTEXT2 failed with the following output:
+Change Dir: /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec72211726/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec72211726.dir/build.make CMakeFiles/cmTryCompileExec72211726.dir/build
+make[1]: Entering directory `/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec72211726.dir/src.cxx.o
+/usr/bin/c++    -std=c++0x -Wall -Wextra  -DHAVE_FFMPEG_AVFORMAT_ALLOC_OUTPUT_CONTEXT2   -o CMakeFiles/cmTryCompileExec72211726.dir/src.cxx.o -c /home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx
+/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp/src.cxx:3:10: error: ‘avformat_alloc_output_context2’ was not declared in this scope
+         &avformat_alloc_output_context2;
+          ^
+make[1]: *** [CMakeFiles/cmTryCompileExec72211726.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/home/sam/SVO_edgelet/Pangolin/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec72211726/fast] Error 2
+
+Source file was:
+#include "/usr/include/libavformat/avformat.h"
+      int main() {
+        &avformat_alloc_output_context2;
+      }

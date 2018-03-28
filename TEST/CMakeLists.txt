@@ -60,3 +60,6 @@ target_link_libraries( readmp4 ${OpenCV_LIBS})
 
 add_executable( record record.cpp )
 target_link_libraries( record ${OpenCV_LIBS})
+
+add_executable( test_con test_con.cpp )
+target_link_libraries( test_con pthread)
